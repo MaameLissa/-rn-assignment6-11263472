@@ -162,6 +162,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 50,
     resizeMode: "contain",
+    
   },
   headerIcons: {
     flexDirection: "row",
@@ -176,6 +177,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
+    marginBottom: -40,
     left: -100,
   },
   productContainer: {
@@ -188,7 +190,7 @@ const styles = StyleSheet.create({
     width: 175,
     height: 250,
     resizeMode: "cover",
-    marginBottom: 10,
+    marginBottom:5,
   },
   productTitle: {
     fontSize: 16,
@@ -202,7 +204,7 @@ const styles = StyleSheet.create({
   },
   productPrice: {
     fontSize: 16,
-    color: '#c67d11',
+    color: '#f4967d',
     left: -40,
   },
   addButton: {
@@ -217,7 +219,7 @@ const styles = StyleSheet.create({
    left: 40,
   },
   addbutton: {
-    top: -65,
+    top: -5,
     left: 160,
   },
 });

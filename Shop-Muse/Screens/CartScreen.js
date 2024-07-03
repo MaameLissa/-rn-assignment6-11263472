@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 40,
     resizeMode: "contain",
+    left: 100,
   },
   icon: {
     width: 24,
@@ -118,8 +119,8 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
-    shadowRadius: 5,
-    elevation: 2,
+    shadowRadius: 2,
+    elevation: 1,
   },
   itemImage: {
     width: 80,
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
   },
   itemPrice: {
     fontSize: 16,
-    color: "#e60000",
+    color: "#f4967d",
   },
   removeIcon: {
     width: 24,
