@@ -125,10 +125,10 @@ const HomeScreen = ({ navigation }) => {
         renderItem={({ item }) => (
           <View style={styles.productContainer}>
             <Image source={item.image} style={styles.productImage} />
-          <View style={styles.Text}>
-          <Text style={styles.productTitle}>{item.title}</Text>
-            <Text style={styles.productSubtitle}>{item.subtitle}</Text>
-            <Text style={styles.productPrice}>${item.price}</Text>  
+            <View style={styles.Text}>
+              <Text style={styles.productTitle}>{item.title}</Text>
+              <Text style={styles.productSubtitle}>{item.subtitle}</Text>
+              <Text style={styles.productPrice}>${item.price}</Text>
             </View>
             <TouchableOpacity onPress={() => addToCart(item)}>
               <Image
@@ -162,7 +162,6 @@ const styles = StyleSheet.create({
     width: 100,
     height: 50,
     resizeMode: "contain",
-    
   },
   headerIcons: {
     flexDirection: "row",
@@ -184,13 +183,13 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 10,
     alignItems: "center",
-    marginTop: 10,
+    marginBottom: -30,
   },
   productImage: {
     width: 175,
     height: 250,
     resizeMode: "cover",
-    marginBottom:5,
+    marginBottom: 5,
   },
   productTitle: {
     fontSize: 16,
@@ -204,7 +203,7 @@ const styles = StyleSheet.create({
   },
   productPrice: {
     fontSize: 16,
-    color: '#f4967d',
+    color: "#f4967d",
     left: -40,
   },
   addButton: {
@@ -214,9 +213,9 @@ const styles = StyleSheet.create({
     top: -130,
     left: 70,
   },
-  Text:
-  {
-   left: 40,
+  Text: {
+    left: 40,
+    
   },
   addbutton: {
     top: -5,
