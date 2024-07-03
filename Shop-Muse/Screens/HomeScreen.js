@@ -111,10 +111,10 @@ const HomeScreen = ({ navigation }) => {
         </View>
       </View>
       <Text style={styles.storyText}>OUR STORY </Text>
-      <Text>From Melissa Otoo</Text>
+
       <TouchableOpacity>
         <Image
-          source={require("../images/addbutton.jpg")}
+          source={require("../images/addbutton.png")}
           style={styles.addbutton}
         />
       </TouchableOpacity>
@@ -125,9 +125,11 @@ const HomeScreen = ({ navigation }) => {
         renderItem={({ item }) => (
           <View style={styles.productContainer}>
             <Image source={item.image} style={styles.productImage} />
-            <Text style={styles.productTitle}>{item.title}</Text>
+          <View style={styles.Text}>
+          <Text style={styles.productTitle}>{item.title}</Text>
             <Text style={styles.productSubtitle}>{item.subtitle}</Text>
-            <Text style={styles.productPrice}>${item.price}</Text>
+            <Text style={styles.productPrice}>${item.price}</Text>  
+            </View>
             <TouchableOpacity onPress={() => addToCart(item)}>
               <Image
                 source={require("../images/add_circle.png")}
@@ -154,7 +156,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 10,
+    padding: 15,
   },
   logo: {
     width: 100,
@@ -174,12 +176,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
-    left: -120,
+    left: -100,
   },
   productContainer: {
     flex: 1,
     margin: 10,
     alignItems: "center",
+    marginTop: 10,
   },
   productImage: {
     width: 175,
@@ -190,27 +193,32 @@ const styles = StyleSheet.create({
   productTitle: {
     fontSize: 16,
     fontWeight: "bold",
-    left: -50,
+    left: -39,
   },
   productSubtitle: {
-    fontSize: 14,
+    fontSize: 11.5,
     color: "#888",
+    left: -40,
   },
   productPrice: {
     fontSize: 16,
-    color: "#e60000",
-    left: -70,
+    color: '#c67d11',
+    left: -40,
   },
   addButton: {
     width: 30,
     height: 30,
     marginTop: 10,
-    top: -120,
+    top: -130,
     left: 70,
+  },
+  Text:
+  {
+   left: 40,
   },
   addbutton: {
     top: -65,
-    left: 260,
+    left: 160,
   },
 });
 

@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const CartScreen = ({ navigation }) => {
@@ -43,7 +44,8 @@ const CartScreen = ({ navigation }) => {
           <Image source={require("../images/Search.png")} style={styles.icon} />
         </TouchableOpacity>
       </View>
-      <Text style={styles.headerText}>CHECKOUT</Text>
+      {/* <Text style={styles.headerText}>CHECKOUT</Text> */}
+      <Image source={require("../images/cout.png")} style={styles.cout} />
       <FlatList
         data={cart}
         keyExtractor={(item) => item.id}
@@ -73,6 +75,7 @@ const CartScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Home")}
       >
         <Text style={styles.checkoutButtonText}>CHECKOUT</Text>
+        <Icon style={styles.iconbag}name="shopping-bag" size={30} color="#fff" />
       </TouchableOpacity>
     </View>
   );
@@ -169,10 +172,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 20,
   },
+  iconbag:{
+  left: -80,
+  top: -14,
+  },
+  cout:{
+    top: 20,
+    left: 20,
+  },
   checkoutButtonText: {
     color: "#fff",
     fontSize: 18,
     fontWeight: "bold",
+    right: -22,
+    top: 15,
+    
   },
 });
 
