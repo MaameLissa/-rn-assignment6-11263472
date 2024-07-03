@@ -51,7 +51,7 @@ const products = [
     title: "Lopo",
     subtitle: "reversible Angora Cardigan",
     price: 120,
-    image: require("../assets/dress6.png"),
+    image: require("../images/dress6.png"),
   },
   {
     id: "7",
@@ -114,7 +114,7 @@ const HomeScreen = ({ navigation }) => {
       <Text>From Melissa Otoo</Text>
       <TouchableOpacity>
         <Image
-          source={require("../assets/addbutton.png")}
+          source={require("../images/addbutton.jpg")}
           style={styles.addbutton}
         />
       </TouchableOpacity>
